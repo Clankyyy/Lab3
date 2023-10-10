@@ -9,3 +9,4 @@ bucket_sort = timeit.Timer(lambda: Algorithms.bucket_sort(A))
 
 print("merge sort exec time: ", merge_sort.timeit(10))
 print ("bucket sort exec time: ", bucket_sort.timeit(10))
+#kfk
