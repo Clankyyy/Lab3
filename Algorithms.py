@@ -1,4 +1,4 @@
-def merge_sort(arr):
+def mergesort(arr):
     if len(arr) <= 1:
         return arr
 
@@ -7,8 +7,8 @@ def merge_sort(arr):
     left = arr[:mid]
     right = arr[mid:]
 
-    left = merge_sort(left)
-    right = merge_sort(right)
+    left = mergesort(left)
+    right = mergesort(right)
 
     return merge(left, right)
 
@@ -31,7 +31,7 @@ def merge(left, right):
 
 
 
-def bucket_sort(arr):
+def bucketsort(arr):
     # Find the minimum and maximum values in the input array
     min_val = min(arr)
     max_val = max(arr)
